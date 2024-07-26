@@ -1,0 +1,182 @@
+body {
+    background-image: url(reg-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    margin: 0;
+    padding: none;
+    box-sizing: border-box;
+    height: 100vh;
+    display: grid;
+    position: relative;
+}
+
+.reg-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.logo {
+    position: absolute;
+    left: 36px;
+    top: 10px;
+    width: 200px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: DM Sans, "Regular";
+    font-weight: 400;
+    text-align: left;
+}
+
+.login-note {
+    position: absolute;
+    left: 1037px;
+    top: 42px;
+    width: 300px;
+    height: 26px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: DM Sans, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+}
+
+.login-page-link {
+    position: absolute;
+    display: flex;
+    left: 1314px;
+    top: 42px;
+    width: 70px;
+    height: 26px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: DM Sans, "Regular";
+    font-weight: 400;
+    text-align: left;
+    vertical-align: top;
+}
+
+.reg-form {
+    justify-content: right;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+.form {
+    display: flex;
+    margin: auto;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    background-color: rgba(225, 188, 140, 0.527) ;
+    padding: 1rem;
+    width: 350px;
+    height: 500px;
+    border-radius: 4px;
+    /* this is for the registration-page */
+}
+
+input {
+    background-color: white;
+    width: 350px;
+    height: 35px;
+    border-radius: 7px;
+    border-style: hidden;
+    display: block;
+    margin: auto;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+.form input:not(:last child){
+    border: 1px #c1e8ff solid;
+    height: 30px;
+    border-radius: 4px;
+    padding: 2rem;
+    outline: none;
+}
+
+.form input:last-child {
+    width: 70px;
+    height: auto;
+    padding: .5rem;
+    display: block;
+    margin: auto;
+    font-family: DM Sans, "Regular";
+    font-weight: 400;
+    transition: all 250ms ease-in;
+}
+
+.form input:last-child:hover{
+    background-color: grey;
+}
+
+.form input:last-child:focus {
+    scale: .95;
+}
+
+.login-page {
+    background-image: url(login-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(3px);
+    margin: 0;
+    padding: none;
+    align-items: flex-start;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+}
+.login-page-content {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+ .form-content {
+    justify-content: right;
+    overflow: hidden;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+ }
+ 
+ .login-form {
+    display: flex;
+    margin: auto;
+    text-align: left;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    width: 350px;
+ }
+
+ .form-content input:last-child {
+    width: 70px;
+    height: auto;
+    padding: .5rem;
+    display: block;
+    margin: auto;
+    font-family: DM Sans, "Regular";
+    font-weight: 400;
+    transition: all 250ms ease-in;
+ }
