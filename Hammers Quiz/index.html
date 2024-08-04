@@ -9,27 +9,38 @@
     <title>Hammerz!/quiz</title>
 </head>
 <body class="quiz-center">
-    <header>
+    <header class="quiz-header">
         <h1>Lets Go!</h1>
     </header>
     <div class="questions-box">
-        <div class="timer">Time left: 10 seconds</div>
-        <div class="question">
-            <fieldset>
+        <!-- <div class="question"> -->
+            <!-- <fieldset> -->
+                <!-- Questions Container -->
+            <form class="questions-form" action="/submit" method="post">
+                <!-- Question 1 -->
+                <div class="question">
+                <h2>Question 1: What is the capital of Nigeria?</h2>
+                <ul>
+                    <li><input type="radio" name="q1" value="Abuja">Abuja</li>
+                    <li><input type="radio" name="q1" value="Lagos">Lagos</li>
+                    <li><input type="radio" name="q1" value="Kano">Kano</li>
+                </ul>
+                </div>
                 
-            </fieldset>
-        </div>
-        <div class="options">
-            <div id="container">
-                <input type="checkbox">
-                <input type="checkbox">
-            </div>
-            <div id="container 2">
-                 <input type="checkbox">
-                 <input type="checkbox">
-            </div>
-            <div class="timer">Time left: 10 seconds</div>
-        </div>
+                <!-- Question 2 -->
+                <div class="question">
+                <h2>Question 2: Which of the following is the largest state in Nigeria by land area?</h2>
+                <ul>
+                    <li><input type="radio" name="q2" value="Niger State">Niger State</li>
+                    <li><input type="radio" name="q2" value="Kaduna State">Kaduna State</li>
+                    <li><input type="radio" name="q2" value="Kano State">Kano State</li>
+                </ul>
+                </div>
+                <button type="submit"> <a href="result.html">Submit Quiz</a></button>
+            </form>
+            </form>
+            <!-- </fieldset> -->
+        <!-- </div> -->
     </div>
 </body>
 </html>
