@@ -14,6 +14,11 @@ body {
     transform: translate(-50%, -50%);
 }
 
+.questions-box .timer {
+    font-weight: bold;
+    text-align: right;
+}
+
 h1 {
     font-family: "Silkscreen", sans-serif;
     font-weight: 400;
@@ -69,7 +74,7 @@ button {
     transition: all 250ms ease-in;
 }
 
-button:last-child:hover{
+button:last-child:hover {
     background-color: grey;
 }
 
@@ -91,7 +96,7 @@ button:last-child:focus {
 }
 
 .options {
-    display:grid;
+    display: grid;
     justify-content: space-between;
 }
 
@@ -107,17 +112,22 @@ fieldset {
 }
 
 @keyframes progress {
-    0% { --percentage: 0; }
-    100% { --percentage: var(--value); }
-  }
-  
-  @property --percentage {
+    0% {
+        --percentage: 0;
+    }
+
+    100% {
+        --percentage: var(--value);
+    }
+}
+
+@property --percentage {
     syntax: '<number>';
     inherits: true;
     initial-value: 0;
-  }
-  
-  [role="progressbar"] {
+}
+
+[role="progressbar"] {
     --percentage: var(--value);
     --primary: rgb(104, 10, 10);
     --secondary: rgb(220, 135, 135);
@@ -131,9 +141,9 @@ fieldset {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-  }
-  
-  [role="progressbar"]::before {
+}
+
+[role="progressbar"]::before {
     content: "";
     position: absolute;
     top: 0;
@@ -145,12 +155,12 @@ fieldset {
     mask-mode: alpha;
     -webkit-mask: radial-gradient(at 50% 100%, #0000 55%, #000 55.5%);
     -webkit-mask-mode: alpha;
-  }
-  
-  [role="progressbar"]::after {
+}
+
+[role="progressbar"]::after {
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
     font-family: Helvetica, Arial, sans-serif;
     font-size: calc(var(--size) / 5);
     color: var(--primary);
-  }
+}
