@@ -89,6 +89,12 @@ button:last-child:focus {
     justify-content: left;
 }
 
+.timer {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .result-center {
     background-image: url(classroom.jpg);
     backdrop-filter: blur(50%);
