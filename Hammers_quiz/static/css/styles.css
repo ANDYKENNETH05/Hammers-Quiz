@@ -115,6 +115,9 @@ button:last-child:focus {
     transform: translate(-50%, -50%);
 }
 
+.navbar{
+font-size:20px}
+
 @keyframes progress {
     0% { --percentage: 0; }
     100% { --percentage: var(--value); }
