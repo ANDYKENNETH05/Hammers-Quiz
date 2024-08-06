@@ -1,7 +1,7 @@
 body {
     padding: 0;
     margin: auto;
-    background-image: url(bg.jpg);
+    background-image: url("../images/bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -78,7 +78,7 @@ button:last-child:focus {
 }
 
 .quiz-center {
-    background-image: url(classroom.jpg);
+    background-image:url("../images/classroom.jpg);
     backdrop-filter: blur(30px);
 }
 
@@ -115,8 +115,16 @@ button:last-child:focus {
     transform: translate(-50%, -50%);
 }
 
-.navbar{
-font-size:20px}
+.navbar a{
+    font-size:20px;
+    background:transparent;
+    font-weight:500px;
+    padding:20px 10px;
+    color:black;
+    text-align:right;
+    font-family: "Silkscreen", sans-serif;
+
+}
 
 @keyframes progress {
     0% { --percentage: 0; }

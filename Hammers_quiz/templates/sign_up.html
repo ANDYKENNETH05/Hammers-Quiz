@@ -1,6 +1,7 @@
-{% extends "base.html" %} {% block title %}Sign up{% endblock %}
+
 {% block content %}
 <form method="POST">
+     <link rel="stylesheet" href="../static/css/styles.css">
     <h3 align="center">sign up</h3>
     <div class="form-group">
         <label for="email">Email Address</label>
@@ -43,6 +44,6 @@
             />
     </div>
     <br />
-    <button type="submit" class="btn btn-primary">submit</button>
+    <button type="submit" class="btn btn-primary" id="sign-up-btn">submit</button>
 </form>
 {% endblock %}
