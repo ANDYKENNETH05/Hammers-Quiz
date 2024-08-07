@@ -4,16 +4,16 @@
     <head>
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <link rel="stylesheet" href="..static/styles.css"/>
+        <link rel="stylesheet" href="../static/css/styles.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/>
         <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"/>
-
+        <h1>HAMMERZ QUIZ</h1>
 
         <title>{% block title %}Home{% endblock %}</title>
     </head>
     <body>
-    <nav class="navbar bg-body-tertiary">
+    <nav class="navbar">
         <div class="container-fluid">
             <a class="navbar-brand" href="login">login</a>
              <a class="navbar-brand" href="logout">logout</a>
@@ -58,6 +58,5 @@
             </div>
          </div>
 
-<script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
 </html>

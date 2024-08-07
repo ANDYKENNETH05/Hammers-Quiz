@@ -85,6 +85,20 @@ const nextBtn = document.querySelector(".quiz-container .next-btn");
 const quizResult = document.querySelector(".quiz-result");
 const startBtnContainer = document.querySelector(".start-btn-container");
 const startBtn = document.querySelector(".start-btn-container .start-btn");
+const signUpBtn = document.getElementById("sign-up-btn")
+
+signUpBtn.addEventListener("click", async(e) => {
+    e.preventDefault()
+    const res = await fetch("/sign-up", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({})
+    })
+    const data = await res.json()
+    console.log(data)
+})
 
 let questionNumber = 0;
 let score = 0;
